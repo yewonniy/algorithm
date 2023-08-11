@@ -5,6 +5,6 @@ def binary_search(array, target, start, end):
     if target == array[mid]:
         return mid
     elif target < array[mid]:
-        binary_search(array, target, start, mid-1)
+        return binary_search(array, target, start, mid-1)
     else:
-        binary_search(array, target, mid+1, end)
+        return binary_search(array, target, mid+1, end)
