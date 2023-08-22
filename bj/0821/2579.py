@@ -16,9 +16,8 @@ def jump(array, idx, cnt, history):
         if len(history) > 1:
             if history[-1] - history[-2] == 1:
                 jump(array, idx+2, cnt+array[idx+2], history)
-            else:
-        else:
-            memo[idx] = jump(array, idx+1, cnt+array[idx+1], history)
+       else:
+            jump(array, idx+1, cnt+array[idx+1], history)
             jump(array, idx+2, cnt+array[idx+2], history)
 
 
