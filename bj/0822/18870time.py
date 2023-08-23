@@ -8,5 +8,5 @@ for i, num in enumerate(arr):
 
 arr_2 = sorted(set(arr))
 
-for i in range(len(arr_2)):
+for i in range(n):
     print(arr_2.index(memo[i][1]), end=' ')
