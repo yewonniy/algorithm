@@ -27,7 +27,7 @@ else:
 
 # 위에꺼 시간 초과 나서 아래 꺼로
 # 아래껀 메모리 초과..
-M = int(input())
+N = int(input())
 
 
 def pinary_(n):
@@ -44,7 +44,28 @@ def pinary_(n):
     print(len(result))
 
 
-if M == 1 or M == 2:
+if N == 1 or N == 2:
     print(1)
 else:
-    pinary_(M)
+    pinary_(N)
+
+# 재시도 (규칙 찾음)
+M = int(input())
+
+
+def pin(n):
+    cnt_zero = 1
+    cnt_one = 1
+    for i in range(3, M):
+        temp = cnt_zero
+        cnt_zero += cnt_one
+        cnt_one = temp
+    print(cnt_zero + cnt_one)
+
+
+if M == 1 or M == 2:
+    print(1)
+elif M == 3:
+    print(2)
+else:
+    pin(M)
