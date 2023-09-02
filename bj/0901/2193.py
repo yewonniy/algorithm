@@ -3,7 +3,7 @@ sys.setrecursionlimit(10000)
 N = int(input())
 cnt = 0
 
-
+# 다이나믹 프로그래밍 -> 리스트는 메모리 초과, 리스트 안써도 시간초과
 def pin(n):
     global cnt
     if len(str(n)) == N:
@@ -26,7 +26,7 @@ else:
     print(cnt)
 
 # 위에꺼 시간 초과 나서 아래 꺼로
-# 아래껀 메모리 초과..
+# 아래껀 메모리 초과.. 나네..
 N = int(input())
 
 
@@ -53,7 +53,7 @@ else:
 M = int(input())
 
 
-def pin(n):
+def pin_2(n):
     cnt_zero = 1
     cnt_one = 1
     for i in range(3, M):
@@ -68,4 +68,4 @@ if M == 1 or M == 2:
 elif M == 3:
     print(2)
 else:
-    pin(M)
+    pin_2(M)
