@@ -1,6 +1,5 @@
 # 너비 우선 탐색
 # 큐를 이용해서 구현
-
 from collections import deque
 
 
