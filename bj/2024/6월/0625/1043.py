@@ -7,5 +7,5 @@ for _ in range(m):
 
 if arr[0] == 0:
     print(m)
-else:
-    # bfs? dfs?
+# else:
+#     # bfs? dfs?
