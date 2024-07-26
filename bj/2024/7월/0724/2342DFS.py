@@ -33,5 +33,8 @@ def dfs(level, pos, cnt):
         dfs(level + 1, [arr[level], pos[1]], cnt + 4)
 
 
-dfs(1, [arr[0], 0], 2)
+if len(arr) == 0:
+    mini = 0
+else:
+    dfs(1, [arr[0], 0], 2)
 print(mini)
